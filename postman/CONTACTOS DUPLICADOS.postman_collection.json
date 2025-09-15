@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "4355e7c8-8181-4927-959c-7566ba5ba09c",
+		"name": "CONTACTOS DUPLICADOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32044807"
+	},
+	"item": [
+		{
+			"name": "import",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/richi/Downloads/duplicados-java/Code Assessment - Find Duplicates Input.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/contacts/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"contacts",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get duplicates",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
